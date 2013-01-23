@@ -4,6 +4,10 @@
   "description": "Generate jQuery plugin manifest automatically from package.json values",
   "author": "Andrew Duthie <andrew@andrewduthie.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aduth/grunt-jquerymanifest.git"
+  },
   "keywords": [
     "jquery",
     "manifest"
