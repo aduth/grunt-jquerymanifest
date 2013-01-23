@@ -6,7 +6,7 @@ Generate jQuery plugin manifest automatically from package.json values
 
 ## Getting Started
 
-If you haven't used [grunt][http://gruntjs.com/] before, be sure to check out the [Getting Started][https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md] guide, as it explains how to create a gruntfile as well as install and use grunt plugins. Once you're familiar with that process, install this plugin with this command:
+If you haven't used [grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md) guide, as it explains how to create a gruntfile as well as install and use grunt plugins. Once you're familiar with that process, install this plugin with this command:
 
 ```shell
 npm install grunt-jquerymanifest --save-dev
