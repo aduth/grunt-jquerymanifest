@@ -12,8 +12,10 @@
     "jquery",
     "manifest"
   ],
-  "devDependencies": {
-    "grunt": "~0.4.0",
+  "dependencies": {
     "string-format": "~0.2.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0"
   }
 }
