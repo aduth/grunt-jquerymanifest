@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             required: true,
             mapping: function(source) {
                 return [{
-                    name: source.license
+                    type: source.license
                 }];
             }
         },
