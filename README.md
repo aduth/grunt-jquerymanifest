@@ -48,7 +48,7 @@ The following manifest properties are automatically mapped from package.json:
 
 * `title` - Uses package.json `name`
 * `author` - Generates proper jQuery `people` object with package.json `name` as name
-* `licenses` - Generates proper jQuery `licenses` array with single entry using package.json `license` as type
+* `licenses` - Generates proper jQuery `licenses` array with single entry using package.json `license` as type, and links to `http://opensource.org/licenses/<licensename>` (always check to ensure link is valid with license name)
 * `dependencies` - Returns object with jQuery ("*" version) as sole dependency
 
 ## Options

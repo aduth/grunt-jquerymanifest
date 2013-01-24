@@ -40,7 +40,8 @@ module.exports = function(grunt) {
             required: true,
             mapping: function(source) {
                 return [{
-                    type: source.license
+                    type: source.license,
+                    url: 'http://opensource.org/licenses/' + source.license
                 }];
             }
         },
