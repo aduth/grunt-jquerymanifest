@@ -31,9 +31,13 @@ module.exports = function(grunt) {
         author: {
             required: true,
             mapping: function(source) {
-                return {
-                    name: source.author
-                };
+                if (grunt.util._.isString(source.author)) {
+                    return {
+                        name: source.author
+                    };
+                }
+
+                return source.author;
             }
         },
         licenses: {
