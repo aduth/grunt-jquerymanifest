@@ -39,9 +39,10 @@ module.exports = function(grunt) {
         licenses: {
             required: true,
             mapping: function(source) {
-                if(source.licenses && grunt.util._.isArray(source.licenses)){
+                if (source.licenses && grunt.util._.isArray(source.licenses)) {
                     return source.licenses;
                 }
+
                 return [{
                     type: source.license,
                     url: 'http://opensource.org/licenses/' + source.license
