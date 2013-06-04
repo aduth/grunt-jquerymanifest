@@ -39,6 +39,9 @@ module.exports = function(grunt) {
         licenses: {
             required: true,
             mapping: function(source) {
+                if(source.licenses && typeof source.licenses === 'array'){
+                    return source.licenses;
+                }
                 return [{
                     type: source.license,
                     url: 'http://opensource.org/licenses/' + source.license
