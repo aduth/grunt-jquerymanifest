@@ -60,11 +60,17 @@ module.exports = function(grunt) {
                     'jquery': '*'
                 };
             }
+        },
+        homepage: {
+            required: false,
+            mapping: function(source) {
+                return source.repository;
+            }
         }
     };
 
     // Add optional properties
-    ['description', 'keywords', 'homepage', 'docs', 'demo', 'download', 'bugs', 'maintainers'].forEach(function(optionalField) {
+    ['description', 'keywords', 'docs', 'demo', 'download', 'bugs', 'maintainers'].forEach(function(optionalField) {
         fields[optionalField] = {
             required: false
         };
