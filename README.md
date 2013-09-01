@@ -46,10 +46,12 @@ grunt.registerTask('default', ['jquerymanifest']);
 
 The following manifest properties are automatically mapped from package.json:
 
-* `title` - Uses package.json `name`
-* `author` - Generates proper jQuery `people` object with package.json `name` as name
-* `licenses` - Generates proper jQuery `licenses` array with single entry using package.json `license` as type, and links to `http://opensource.org/licenses/<licensename>` (always check to ensure link is valid with license name)
-* `dependencies` - Returns object with jQuery ("*" version) as sole dependency
+* `name` and `title` - Package `name`
+* `version` - Package `version`
+* `author` - Generates `people` object using package `author` as object, or with name as `author` if string
+* `licenses` - Generates `licenses` array using package `license` as object, or if string, with type as `license` and url as `http://opensource.org/licenses/<licensename>` (always check to ensure link is valid with license name)
+* `dependencies` - Sole dependency of `jQuery: "*"`
+* `homepage` - Package `repository`, if set
 
 ## Options
 
