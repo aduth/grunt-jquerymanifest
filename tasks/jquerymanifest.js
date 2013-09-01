@@ -113,7 +113,11 @@ module.exports = function(grunt) {
                     this.srcValues = this.options.source;
                     break;
                 default:
-                    grunt.fail.warn(texts.cannotReadSource);
+                    if (grunt.file.exists('./package.json')) {
+                        this.srcValues = grunt.file.readJSON('./package.json');
+                    } else {
+                        grunt.fail.warn(texts.cannotReadSource);
+                    }
             }
         }
 
