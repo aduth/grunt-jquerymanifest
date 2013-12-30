@@ -44,14 +44,24 @@ grunt.registerTask('default', ['jquerymanifest']);
 
 ## Automatic Mappings
 
-The following manifest properties are automatically mapped from package.json:
+The following manifest properties are automatically mapped from `package.json`:
 
 * `name` and `title` - Package `name`
-* `version` - Package `version`
 * `author` - Generates `people` object using package `author` as object, or with name as `author` if string
 * `licenses` - Generates `licenses` array using package `license` as object, or if string, with type as `license` and url as `http://opensource.org/licenses/<licensename>` (always check to ensure link is valid with license name)
-* `dependencies` - Sole dependency of `jQuery: "*"`
-* `homepage` - Package `repository`, if set
+* `dependencies` - Defaults to `jQuery: "*"` if not otherwise defined in `package.json`
+
+Additionally, a number of properties will be copied verbatim if they are defined in `package.json`:
+
+* `version`
+* `homepage`
+* `description`
+* `keywords`
+* `docs`
+* `demo`
+* `download`
+* `bugs`
+* `maintainers`
 
 ## Options
 
