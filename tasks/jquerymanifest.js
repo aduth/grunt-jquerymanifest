@@ -63,8 +63,23 @@ module.exports = function(grunt) {
         }
     };
 
-    // Add optional properties
-    ['description', 'keywords', 'docs', 'demo', 'download', 'bugs', 'maintainers', 'homepage'].forEach(function(optionalField) {
+    /**
+     * Optional fields mapped verbatim from package.json
+     *
+     * @constant
+     */
+    var optionalFields = [
+        'description',
+        'keywords',
+        'docs',
+        'demo',
+        'download',
+        'bugs',
+        'maintainers',
+        'homepage'
+    ];
+
+    optionalFields.forEach(function(optionalField) {
         fields[optionalField] = {
             required: false
         };
