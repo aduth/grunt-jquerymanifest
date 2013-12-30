@@ -55,10 +55,12 @@ module.exports = function(grunt) {
         },
         dependencies: {
             required: true,
-            mapping: function() {
-                return {
+            mapping: function(source) {
+                var defaults = {
                     'jquery': '*'
                 };
+
+                return grunt.util._.defaults(source.dependencies || {}, defaults);
             }
         }
     };
