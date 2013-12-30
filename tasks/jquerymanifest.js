@@ -2,7 +2,7 @@
  * grunt-jquerymanifest
  * http://github.com/aduth/grunt-jquerymanifest
  *
- * Copyright (c) 2013 Andrew Duthie
+ * Copyright (c) 2014 Andrew Duthie
  * Licensed under the MIT License
  */
 
