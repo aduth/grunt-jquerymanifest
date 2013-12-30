@@ -1,6 +1,6 @@
 {
   "name": "grunt-jquerymanifest",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Generate jQuery plugin manifest automatically from package.json values",
   "author": "Andrew Duthie <andrew@andrewduthie.com>",
   "license": "MIT",
